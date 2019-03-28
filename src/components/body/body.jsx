@@ -1,21 +1,27 @@
 import React from 'react';
-import { Container, Row, Col } from 'reactstrap';
+import { Container, Col } from 'reactstrap';
 import PofButton from '../pof/pofbutton'
+import Carousel from '../slider/slider'
+import './body.css';
 
 
 export default class Body extends React.Component {
   render() {
     return (
-      <Container>
-        <Row>
+      <div className="myBeautifulBackground">
+        <Container>
+          <Col>
+            < Carousel />
+          </Col>
           <Col>
             <p>Hello world.</p>
           </Col>
-            <Col xs="12">
-              < PofButton />
-            </Col>
-        </Row>
-      </Container>
+          <Col >
+            < PofButton />
+          </Col>
+
+        </Container>
+      </div>
     );
   }
 }

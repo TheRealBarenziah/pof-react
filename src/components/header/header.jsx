@@ -1,4 +1,5 @@
 import React from 'react';
+import './header.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import {
   Collapse,
@@ -11,7 +12,8 @@ import {
   UncontrolledDropdown,
   DropdownToggle,
   DropdownMenu,
-  DropdownItem } from 'reactstrap';
+  DropdownItem,
+  Button } from 'reactstrap';
 
 export default class Header extends React.Component {
   constructor(props) {
@@ -31,7 +33,7 @@ export default class Header extends React.Component {
     return (
       <div>
         <Navbar color="light" light expand="md">
-          <NavbarBrand href="/">pushOrFold.jsx</NavbarBrand>
+          <NavbarBrand href="/" id="mySexyBanner">pushOrFold.jsx</NavbarBrand>
           <NavbarToggler onClick={this.toggle} />
           <Collapse isOpen={this.state.isOpen} navbar>
             <Nav className="ml-auto" navbar>
@@ -44,14 +46,14 @@ export default class Header extends React.Component {
                 </DropdownToggle>
                 <DropdownMenu right>
                   <DropdownItem>
-                    <a href="https://duckduckgo.com/?q=call+or+fold%3F&ia=web" target="_blank">Call or Fold</a>
+                    <a href="https://duckduckgo.com/?q=call+or+fold%3F&ia=web" target="_blank" rel="noopener noreferrer">Call or Fold</a>
                   </DropdownItem>
                   <DropdownItem>
                     <a href="http://www.perdu.com">About</a>
                   </DropdownItem>
                   <DropdownItem divider />
                   <DropdownItem>
-                    Log in
+                    <Button color="success">Log in</Button>{' '}
                   </DropdownItem>
                 </DropdownMenu>
               </UncontrolledDropdown>
