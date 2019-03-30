@@ -27,7 +27,6 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-            
         <Nav tabs className="mySexyNav">
           <NavItem className="text-success">
             <NavLink
@@ -45,40 +44,49 @@ class App extends Component {
               onClick={() => { this.toggle('3'); }}>About</NavLink>
           </NavItem>
         </Nav>
-        <TabContent activeTab={this.state.activeTab}>
 
+        <TabContent activeTab={this.state.activeTab} >
           <TabPane tabId="1">
-            <Row>
-              <Col>
-                <Body />
-                <Footer />
-              </Col>
-            </Row>
+            <div className="myBeautifulBackground2">
+              <Row>
+                <Col>
+                  <Body />
+                </Col>
+              </Row>
+              <Footer />
+
+            </div>
           </TabPane>
 
           <TabPane tabId="2">
-            <Row>
-              <Col>
-                <Card body>
-                  <CardTitle>Poker</CardTitle>
-                  <CardText>Still under construction.</CardText>
-                  <Button>Click to acknowledge the futility of existence</Button>
-                </Card>
-                < Footer />
-              </Col>
-            </Row>
+            <div className="myBeautifulBackground">
+              <Row>
+                <Col>
+                  <Card body>
+                    <CardTitle>Poker</CardTitle>
+                    <CardText>Still under construction.</CardText>
+                    <Button>Click to acknowledge the futility of existence</Button>
+                  </Card>
+                </Col>
+              </Row>
+            </div>
+            < Footer />
           </TabPane>
 
+
           <TabPane tabId="3">
-            <Row>
-              <Col>
-                  < MediaCard text="About me" image="http://placekitten.com/100/100"  />
-                < Footer />
-              </Col>
-            </Row>
+            <div className="myBeautifulBackground2">
+              <Row>
+                <Col>
+                  < MediaCard title="About me" text="This is a side project to toy with React. I don't even like cats or poker that much. GitHub repo: https://github.com/TheRealBarenziah/pof-react" image="http://placekitten.com/150/150" />
+                </Col>
+              </Row>
+            </div>
+            < Footer />
+
           </TabPane>
+
         </TabContent>
-      
       </div>
     );
   }

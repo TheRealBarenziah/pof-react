@@ -44,7 +44,7 @@ export default class QuotePuller extends Component {
     const buttonState = this.state.loading? "Loaded" : "Reload cat card"
     return (
       <div>
-        <MediaArea text="Cats" image="http://placekitten.com/100/100"/>
+        <MediaArea title="Cats" text="Test text" image="http://placekitten.com/100/100"/>
         <Button onClick={() => 
          this.setState({ loading : !this.state.loading})}>
             {buttonState}</Button>

@@ -9,19 +9,22 @@ import {
 
 const items = [
   {
-    src: 'http://placekitten.com/900/300',
-    altText: 'Push to win',
-    caption: 'Push to win'
+    src: 'http://placekitten.com/899/300',
+    altText: 'Kitten Placeholder',
+    title: 'Welcome to NLCats' ,
+    caption: 'Love cats and poker? This is the right place'
   },
   {
     src: 'http://placekitten.com/901/300',
-    altText: 'Learn about yourself',
-    caption: 'Learn about yourself'
+    altText: 'Kitten Placeholder',
+    title: "World is a jungle" ,
+    caption: 'Tame the beast and take advantage of it'
   },
   {
-    src: 'http://placekitten.com/899/300',
-    altText: 'Improve your game',
-    caption: 'Improve your game'
+    src: 'http://placekitten.com/900/300',
+    altText: 'Kitten Placeholder',
+    title: 'Get peace' ,
+    caption: 'Then back to hunt with full efficiency'
   }
 ];
 
@@ -72,7 +75,7 @@ class Slider extends Component {
           key={item.src}
         >
           <img src={item.src} alt={item.altText} />
-          <CarouselCaption captionText={item.caption} captionHeader={item.caption} />
+          <CarouselCaption captionText={item.caption} captionHeader={item.title} />
         </CarouselItem>
       );
     });

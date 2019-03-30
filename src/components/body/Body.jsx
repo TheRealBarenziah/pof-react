@@ -9,7 +9,7 @@ import QuotePuller from '../quotepuller/QuotePuller';
 export default class Body extends React.Component {
   render() {
     return (
-      <div className="myBeautifulBackground">
+      <div>
         <Container>
           < DismissableAlert />
          <Row>
