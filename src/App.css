@@ -17,3 +17,10 @@
 .App-link {
   color: #61dafb;
 }
+
+.mySexyNav {
+  font-style: italic;
+  font-weight: bold;
+  color: white;
+  background-color: black
+}

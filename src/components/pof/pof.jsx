@@ -1,6 +1,6 @@
 import React from 'react';
 import { Form, FormGroup, Label, Input} from 'reactstrap';
-import PofButton from '../pof/pofbutton'
+import PofButton from '../pof/pofButton'
 import "./pof.css"
 
 export default class PofForm extends React.Component {

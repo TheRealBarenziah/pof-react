@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import MediaArea from './MediaAreaFunc'
+import MediaArea from './mediaAreaFunc'
 import { Spinner , Button} from 'reactstrap'
 
 /*
