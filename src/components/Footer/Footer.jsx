@@ -3,7 +3,7 @@ import { Nav, NavItem, NavLink } from 'reactstrap';
 import './footer.css';
 
 
-export default class Header extends React.Component {
+export default class Footer extends React.Component {
   render() {
     return (
       <div>

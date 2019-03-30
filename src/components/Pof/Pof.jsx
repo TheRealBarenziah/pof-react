@@ -1,9 +1,19 @@
 import React from 'react';
-import { Form, FormGroup, Label, Input} from 'reactstrap';
-import PofButton from '../pof/pofButton'
+import { Form, FormGroup, Label, Input, Button} from 'reactstrap';
 import "./pof.css"
 
 export default class PofForm extends React.Component {
+  constructor(props){
+    super(props)
+    this.state = {
+      loading: true
+    }
+  }
+  componentDidMount = () => {
+    setTimeout(() => {
+      this.setState({loading: false});
+    }, 10)
+  }
   render() {
     return (
       <Form>
@@ -30,8 +40,10 @@ export default class PofForm extends React.Component {
             Activate quantum computing (/!\ Use at own risk /!\)
           </Label>
         </FormGroup>
-        < PofButton />
+        <Button color="secondary" onClick={() => 
+   9 |         this.setState({ loading : !this.state.loading})}>Click to do nothing</Button>
       </Form>
+      
     );
   }
 }

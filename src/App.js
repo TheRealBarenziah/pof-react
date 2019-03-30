@@ -1,10 +1,11 @@
 import React, { Component } from 'react';
 import './App.css';
-import Body from './components/body/Body'
-import Footer from './components/footer/Footer'
-import { TabContent, TabPane, Nav, NavItem, NavLink, Card, Button, CardTitle, CardText, Row, Col } from 'reactstrap';
+import BodyCats from './components/BodyCats/BodyCats'
+import BodyPoker from './components/BodyPoker/BodyPoker'
+import BodyAbout from './components/BodyAbout/BodyAbout'
+import Footer from './components/Footer/Footer'
+import { TabContent, TabPane, Nav, NavItem, NavLink, Row, Col, Container } from 'reactstrap';
 import classnames from 'classnames';
-import MediaCard from './components/quotepuller/mediaAreaFunc'
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 class App extends Component {
@@ -26,12 +27,12 @@ class App extends Component {
   }
   render() {
     return (
-      <div className="App">
+      <div className="App, myBeautifulBackground1">
         <Nav tabs className="mySexyNav">
           <NavItem className="text-success">
             <NavLink
               className={classnames({ active: this.state.activeTab === '1' })}
-              onClick={() => { this.toggle('1'); }}>Kittens.jsx</NavLink>
+              onClick={() => { this.toggle('1'); }}>NLCats</NavLink>
           </NavItem>
           <NavItem className="text-warning">
             <NavLink
@@ -44,52 +45,33 @@ class App extends Component {
               onClick={() => { this.toggle('3'); }}>About</NavLink>
           </NavItem>
         </Nav>
-
+<div className="myBeautifulBackground2">
         <TabContent activeTab={this.state.activeTab} >
           <TabPane tabId="1">
-            <div className="myBeautifulBackground2">
+            <Container >
               <Row>
                 <Col>
-                  <Body />
+                  <BodyCats />
                 </Col>
               </Row>
-              <Footer />
-
-            </div>
+            </Container>
+            <Footer />
           </TabPane>
 
           <TabPane tabId="2">
-            <div className="myBeautifulBackground">
-              <Row>
-                <Col>
-                  <Card body>
-                    <CardTitle>Poker</CardTitle>
-                    <CardText>Still under construction.</CardText>
-                    <Button>Click to acknowledge the futility of existence</Button>
-                  </Card>
-                </Col>
-              </Row>
-            </div>
+            < BodyPoker />
             < Footer />
           </TabPane>
-
 
           <TabPane tabId="3">
-            <div className="myBeautifulBackground2">
-              <Row>
-                <Col>
-                  < MediaCard title="About me" text="This is a side project to toy with React. I don't even like cats or poker that much. GitHub repo: https://github.com/TheRealBarenziah/pof-react" image="http://placekitten.com/150/150" />
-                </Col>
-              </Row>
-            </div>
+            < BodyAbout />
             < Footer />
-
           </TabPane>
-
         </TabContent>
-      </div>
-    );
-  }
-}
-
-export default App;
+        </div>
+        </div>
+        );
+      }
+    }
+    
+export default App

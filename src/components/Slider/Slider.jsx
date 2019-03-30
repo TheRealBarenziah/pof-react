@@ -10,20 +10,20 @@ import {
 const items = [
   {
     src: 'http://placekitten.com/899/300',
-    altText: 'Kitten Placeholder',
+    altText: 'Kitten Placeholder1',
     title: 'Welcome to NLCats' ,
-    caption: 'Love cats and poker? This is the right place'
+    caption: "Keep calm and enjoy the cats."
   },
   {
     src: 'http://placekitten.com/901/300',
-    altText: 'Kitten Placeholder',
-    title: "World is a jungle" ,
-    caption: 'Tame the beast and take advantage of it'
+    altText: 'Kitten Placeholder2',
+    title: "Jungle Boogie" ,
+    caption: 'Tame the beast. Take advantage.'
   },
   {
     src: 'http://placekitten.com/900/300',
-    altText: 'Kitten Placeholder',
-    title: 'Get peace' ,
+    altText: 'Kitten Placeholder3',
+    title: 'Muscle your peace' ,
     caption: 'Then back to hunt with full efficiency'
   }
 ];

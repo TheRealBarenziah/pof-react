@@ -1,9 +1,8 @@
 import React from 'react';
 import { Container, Col, Row } from 'reactstrap';
-import Carousel from '../slider/Slider'
-import DismissableAlert from '../dismissableAlert/dismissableAlert'
+import Carousel from '../Slider/Slider'
 import './body.css';
-import QuotePuller from '../quotepuller/QuotePuller';
+import CatCard from '../CatCard/CatCard';
 
 
 export default class Body extends React.Component {
@@ -11,16 +10,15 @@ export default class Body extends React.Component {
     return (
       <div>
         <Container>
-          < DismissableAlert />
          <Row>
           <Col>
             < Carousel />
           </Col>
           <Col >
-            <QuotePuller />
+            <CatCard />
           </Col>
           <Col >
-            <QuotePuller />
+            <CatCard />
           </Col>
           
           </Row>
