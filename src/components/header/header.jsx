@@ -32,16 +32,16 @@ export default class Header extends React.Component {
   render() {
     return (
       <div>
-        <Navbar color="light" light expand="md">
+        <Navbar color="dark" light expand="md">
           <NavbarBrand href="/" id="mySexyBanner">pushOrFold.jsx</NavbarBrand>
           <NavbarToggler onClick={this.toggle} />
           <Collapse isOpen={this.state.isOpen} navbar>
             <Nav className="ml-auto" navbar>
-              <NavItem>
-                <NavLink href="https://github.com/TheRealBarenziah/pof-react">GitHub</NavLink>
+              <NavItem >
+                <NavLink className="mySexyText" href="https://github.com/TheRealBarenziah/pof-react">GitHub</NavLink>
               </NavItem>
               <UncontrolledDropdown nav inNavbar>
-                <DropdownToggle nav caret>
+                <DropdownToggle nav caret className="mySexyText">
                   More
                 </DropdownToggle>
                 <DropdownMenu right>

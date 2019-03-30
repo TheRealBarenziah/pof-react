@@ -1,5 +1,9 @@
 #mySexyBanner {
   font-style: italic;
-  background-color: black;
+  font-weight: bold;
   color: white
+}
+
+.mySexyText {
+  color: aliceblue !important
 }

@@ -1,8 +1,9 @@
 import React from 'react';
-import { Container, Col } from 'reactstrap';
-import PofButton from '../pof/pofbutton'
+import { Container, Col, Row } from 'reactstrap';
 import Carousel from '../slider/slider'
+import DismissableAlert from '../dismissableAlert/dismissableAlert'
 import './body.css';
+import QuotePuller from '../quotepuller/QuotePuller';
 
 
 export default class Body extends React.Component {
@@ -10,16 +11,15 @@ export default class Body extends React.Component {
     return (
       <div className="myBeautifulBackground">
         <Container>
+          < DismissableAlert />
+         <Row>
           <Col>
             < Carousel />
           </Col>
-          <Col>
-            <p>Hello world.</p>
-          </Col>
           <Col >
-            < PofButton />
+            <QuotePuller />
           </Col>
-
+          </Row>
         </Container>
       </div>
     );
