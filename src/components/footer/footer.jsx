@@ -3,8 +3,7 @@ import { Nav, NavItem, NavLink } from 'reactstrap';
 import './footer.css';
 
 
-export default class Footer extends React.Component {
-  render() {
+export default function footer(props) {
     return (
       <div>
         <Nav className="myNavNav">
@@ -24,4 +23,4 @@ export default class Footer extends React.Component {
       </div>
     );
   }
-}
+

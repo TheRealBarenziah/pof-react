@@ -3,7 +3,7 @@ import './App.css';
 import BodyCats from './components/BodyCats/BodyCats'
 import BodyPoker from './components/BodyPoker/BodyPoker'
 import BodyAbout from './components/BodyAbout/BodyAbout'
-import Footer from './components/Footer/Footer'
+import Footer from './components/footer/footer'
 import { TabContent, TabPane, Nav, NavItem, NavLink, Row, Col, Container } from 'reactstrap';
 import classnames from 'classnames';
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -27,7 +27,7 @@ class App extends Component {
   }
   render() {
     return (
-      <div className="App, myBeautifulBackground1">
+      <div className="App">
         <Nav tabs className="mySexyNav">
           <NavItem className="text-success">
             <NavLink
@@ -55,12 +55,12 @@ class App extends Component {
                 </Col>
               </Row>
             </Container>
-            <Footer />
+            <Footer/>
           </TabPane>
 
           <TabPane tabId="2">
             < BodyPoker />
-            < Footer />
+            < Footer/>
           </TabPane>
 
           <TabPane tabId="3">
