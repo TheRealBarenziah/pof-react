@@ -1,9 +1,11 @@
 import React from 'react';
 import { Nav, NavItem, NavLink } from 'reactstrap';
 import './footer.css';
+import Clock from '../Clock/Clock'
 
 
-export default function footer(props) {
+
+export default function footer() {
     return (
       <div>
         <Nav className="myNavNav">
@@ -19,6 +21,10 @@ export default function footer(props) {
           <NavItem>
             <NavLink href="https://www.unicef.org/">Become a patreon</NavLink>
           </NavItem>
+          <NavItem>
+            < Clock />
+          </NavItem>
+          
         </Nav>
       </div>
     );

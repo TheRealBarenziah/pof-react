@@ -2,11 +2,10 @@ import React from 'react';
 import { Container, Col, Row } from 'reactstrap';
 import DismissableAlert from '../DismissableAlert/DismissableAlert'
 import './bodyabout.css';
-import AboutMe from '../CatCard/mediaAreaFunc';
+import AboutMe from '../CatCard/MediaArea';
 
 
-export default class Body extends React.Component {
-  render() {
+export default function BodyAbout() {
     return (
         <Container>
           < DismissableAlert />
@@ -18,4 +17,3 @@ export default class Body extends React.Component {
         </Container>
     );
   }
-}

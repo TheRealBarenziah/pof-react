@@ -23,9 +23,7 @@ export default class Clock extends React.Component {
   }
   render() {
     return (
-      <div>
-        <p className="clockStyle">It is {this.state.date.toLocaleTimeString()}.</p>
-      </div>
+        <p className="clockStyle">{this.state.date.toLocaleTimeString()}</p>
     );
   }
 }

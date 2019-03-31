@@ -3,7 +3,7 @@ import './App.css';
 import BodyCats from './components/BodyCats/BodyCats'
 import BodyPoker from './components/BodyPoker/BodyPoker'
 import BodyAbout from './components/BodyAbout/BodyAbout'
-import Footer from './components/footer/footer'
+import Footer from './components/Footer/Footer'
 import { TabContent, TabPane, Nav, NavItem, NavLink, Row, Col, Container } from 'reactstrap';
 import classnames from 'classnames';
 import 'bootstrap/dist/css/bootstrap.min.css';

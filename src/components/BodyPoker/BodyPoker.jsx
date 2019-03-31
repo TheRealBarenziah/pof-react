@@ -1,13 +1,12 @@
 import React from 'react';
 import { Container, Col, Row } from 'reactstrap';
 import './bodypoker.css';
-import AboutMe from '../CatCard/mediaAreaFunc';
+import AboutMe from '../CatCard/MediaArea';
 import PofForm from '../Pof/Pof'
 
 
-export default class Body extends React.Component {
+export default function BodyPoker() {
   
-  render() {
     return (
         <Container>
           <Row>
@@ -21,4 +20,3 @@ export default class Body extends React.Component {
         </Container>
     );
   }
-}

@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import MediaArea from './mediaAreaFunc'
+import MediaArea from './MediaArea'
 import { Spinner , Button} from 'reactstrap'
 
 export default class QuotePuller extends Component {
