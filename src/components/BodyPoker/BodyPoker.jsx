@@ -2,8 +2,7 @@ import React from 'react';
 import { Container, Col, Row } from 'reactstrap';
 import './bodypoker.css';
 import AboutMe from '../CatCard/MediaArea';
-import PofForm from '../Pof/Pof'
-
+import PofForm from '../Pof/PofForm'
 
 export default function BodyPoker() {
   
