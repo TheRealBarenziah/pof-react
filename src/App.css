@@ -22,7 +22,14 @@
   font-style: italic;
   font-weight: bold;
   color: white;
-  background-color: black
+  background-color: black;
+  border-bottom: none !important;
+}
+
+.sticky-nav {
+  position: sticky !important;
+  z-index: 9 !important;
+  top: 0;
 }
 
 .myBeautifulBackground2 {

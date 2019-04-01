@@ -8,7 +8,7 @@ import Clock from '../Clock/Clock'
 export default function footer() {
     return (
       <div>
-        <Nav className="myNavNav">
+        <Nav className="sticky-footer">
           <NavItem>
             <NavLink href="https://github.com/TheRealBarenziah/pof-react" title="GitHub" target="_blank">TheRealBarenziah</NavLink>
           </NavItem>

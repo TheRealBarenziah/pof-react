@@ -28,7 +28,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <Nav tabs className="mySexyNav">
+        <Nav tabs className="mySexyNav sticky-nav">
           <NavItem className="text-success">
             <NavLink
               className={classnames({ active: this.state.activeTab === '1' })}
@@ -55,17 +55,17 @@ class App extends Component {
                 </Col>
               </Row>
             </Container>
-            <Footer/>
+            <Footer className="fixed-footer"/>
           </TabPane>
 
           <TabPane tabId="2">
             < BodyPoker />
-            < Footer/>
+            < Footer className="fixed-footer"/>
           </TabPane>
 
           <TabPane tabId="3">
             < BodyAbout />
-            < Footer />
+            < Footer className="fixed-footer"/>
           </TabPane>
         </TabContent>
         </div>
