@@ -6,6 +6,8 @@ import {
   CarouselIndicators,
   CarouselCaption
 } from 'reactstrap';
+import Media from 'react-media'
+import './slider.css'
 
 const items = [
   {
@@ -75,7 +77,16 @@ class Slider extends Component {
           key={item.src}
         >
           <img src={item.src} alt={item.altText} />
-          <CarouselCaption captionText={item.caption} captionHeader={item.title} />
+          <Media query="(max-width: 767px)">
+          {matches =>
+            matches ? (
+              <p className="getDesktopPeeps">Smartphones and tablets ruin our planet every day.
+               Because we support Mother Nature, this message will display unless you're on a civilized resolution.</p>
+            ) : (
+              <CarouselCaption captionText={item.caption} captionHeader={item.title} />
+            )
+          }
+        </Media>
         </CarouselItem>
       );
     });

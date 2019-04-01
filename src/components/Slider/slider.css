@@ -1,0 +1,6 @@
+.getDesktopPeeps {
+ position: absolute;
+ bottom: 25%;
+ color: red;
+ font-weight: bold
+}
