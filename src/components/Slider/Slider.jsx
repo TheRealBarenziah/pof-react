@@ -80,8 +80,7 @@ class Slider extends Component {
           <Media query="(max-width: 767px)">
           {matches =>
             matches ? (
-              <p className="getDesktopPeeps">Smartphones and tablets ruin our planet every day.
-               Because we support Mother Nature, this message will display unless you're on a civilized resolution.</p>
+              <p className="getDesktopPeeps">Smartphones and tablets ruin our planet every day. Because we support Mother Nature, this message will display on all uncivilized resolutions.</p>
             ) : (
               <CarouselCaption captionText={item.caption} captionHeader={item.title} />
             )

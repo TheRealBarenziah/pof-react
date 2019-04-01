@@ -2,6 +2,8 @@ import React, { Component } from 'react'
 import MediaArea from './MediaArea'
 import { Spinner , Button} from 'reactstrap'
 
+
+
 export default class QuotePuller extends Component {
   constructor(props){
     super(props)
