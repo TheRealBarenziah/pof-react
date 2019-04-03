@@ -8,7 +8,7 @@ export default class PersonList extends React.Component {
   }
 
   componentDidMount() {
-    axios.get(`https://jsonplaceholder.typicode.com/users`)
+    axios.get(`http://jservice.io/api/random`)
       .then(res => {
         const persons = res.data;
         this.setState({ persons });
@@ -19,7 +19,7 @@ export default class PersonList extends React.Component {
     return (
       <ul className='myList'>
       <h4>GET test</h4>
-        { this.state.persons.map(person => <li>{person.name}</li>)}
+        { this.state.persons.map(person => <li>Question is: {person.question}. Answer is: {person.answer}. Difficulty level is: {person.value}</li>)}
       </ul>
     )
   }

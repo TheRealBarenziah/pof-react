@@ -24,6 +24,18 @@ export default function BodyCats() {
           <Col xs="6" >
             <CatCard />
           </Col>
+          <Col xs="6" >
+            <CatCard />
+          </Col>
+          <Col xs="6" >
+            <CatCard />
+          </Col>
+          <Col xs="6" >
+            <CatCard />
+          </Col>
+          <Col xs="6" >
+            <CatCard />
+          </Col>
           </Row>
         </Container>
       </div>

@@ -10,10 +10,10 @@ export default function BodyAbout() {
         <Container>
           < DismissableAlert />
           <Row>
-            <Col>
+            <Col xs="12">
               < AboutMe title="About me" text="This is a side project to toy with React. GitHub repo in footer. Stay safe <3" image="http://placekitten.com/150/150"/>
             </Col>
-            <Col>
+            <Col xs="12">
             <ApiCallCard />
             </Col>
           </Row>
